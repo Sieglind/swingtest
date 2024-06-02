@@ -1,12 +1,12 @@
 package org.example.menues;
 
-public class MenuThread implements Runnable {
+import org.example.menues.login.LoginJpanel;
 
-    LoginJpanel loginJpanel = new LoginJpanel();
+public class MenuThread implements Runnable {
 
     @Override
     public void run() {
-        MainMenuFrame menuFrame = new MainMenuFrame();
-        menuFrame.setContentPane(loginJpanel);
+        MainMenuFrame menuFrame = MainMenuFrame.getMainMenuFrame();
+        menuFrame.setContentPane(new LoginJpanel());
     }
 }
