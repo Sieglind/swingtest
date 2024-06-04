@@ -1,6 +1,6 @@
 package org.example.menues;
 
-import org.example.menues.login.LoginJpanel;
+import org.example.menues.jpanels.boxpanels.LoginJpanel;
 
 public class MenuThread implements Runnable {
 

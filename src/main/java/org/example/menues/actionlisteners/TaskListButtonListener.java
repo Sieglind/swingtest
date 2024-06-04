@@ -1,7 +1,8 @@
-package org.example.menues.takslist;
+package org.example.menues.actionlisteners;
 
 import org.example.menues.MainMenuFrame;
-import org.example.menues.takslist.actionlists.clientactions.ClientActionListPanel;
+import org.example.menues.jpanels.flowpanels.ClientActionListPanel;
+import org.example.menues.enums.Task;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

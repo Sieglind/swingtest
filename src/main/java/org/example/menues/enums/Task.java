@@ -1,4 +1,4 @@
-package org.example.menues.takslist;
+package org.example.menues.enums;
 
 public enum Task {
     CLIENTES,

@@ -1,6 +1,9 @@
-package org.example.menues.takslist.actionlists.clientactions;
+package org.example.menues.actionlisteners;
 
 import org.example.menues.MainMenuFrame;
+import org.example.menues.jpanels.boxpanels.PanelCrearCliente;
+import org.example.menues.jpanels.flowpanels.ClientActionListPanel;
+import org.example.menues.enums.ClientAction;
 
 import javax.swing.*;
 import java.awt.*;
@@ -23,6 +26,6 @@ public class ClientActionButtonListener implements ActionListener {
             case BUSCAR_CLIENTE -> System.out.println("Buscando Cliente");
             case BORRAR_CLIENTE -> System.out.println("Borrando Cliente");
         }
-        return new ClientActionListPanel();
+        return new PanelCrearCliente();
     }
 }

@@ -1,9 +1,13 @@
-package org.example.menues.takslist;
+package org.example.menues.jpanels.flowpanels;
+
+import org.example.menues.enums.Task;
+import org.example.menues.actionlisteners.TaskListButtonListener;
+import org.example.menues.jpanels.CustomPanel;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class TaskListPanel extends JPanel {
+public class TaskListPanel extends CustomPanel {
     public TaskListPanel() {
         super();
         this.setLayout(new FlowLayout(FlowLayout.CENTER));
@@ -12,8 +16,8 @@ public class TaskListPanel extends JPanel {
     }
 
     private void addTaskButtons() {
+        TaskListButtonListener buttonListener = new TaskListButtonListener();
         for (Task task : Task.values()) {
-            TaskListButtonListener buttonListener = new TaskListButtonListener();
             JButton button = new JButton(task.name());
             button.addActionListener(buttonListener);
             this.add(button);

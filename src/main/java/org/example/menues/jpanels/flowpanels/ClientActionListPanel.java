@@ -1,9 +1,13 @@
-package org.example.menues.takslist.actionlists.clientactions;
+package org.example.menues.jpanels.flowpanels;
+
+import org.example.menues.enums.ClientAction;
+import org.example.menues.actionlisteners.ClientActionButtonListener;
+import org.example.menues.jpanels.CustomPanel;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class ClientActionListPanel extends JPanel {
+public class ClientActionListPanel extends CustomPanel {
 
     public ClientActionListPanel() {
         super();
@@ -13,8 +17,8 @@ public class ClientActionListPanel extends JPanel {
     }
 
     private void addTaskButtons() {
+        ClientActionButtonListener clientActionButtonListener = new ClientActionButtonListener();
         for (ClientAction action : ClientAction.values()) {
-            ClientActionButtonListener clientActionButtonListener = new ClientActionButtonListener();
             JButton button = new JButton(action.getEtiqueta());
             button.setName(action.name());
             button.addActionListener(clientActionButtonListener);

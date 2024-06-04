@@ -1,4 +1,4 @@
-package org.example.menues.takslist.actionlists.clientactions;
+package org.example.menues.enums;
 
 public enum ClientAction {
     CREAR_CLIENTE("Nuevo Cliente"),
